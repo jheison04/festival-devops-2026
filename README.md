@@ -1,46 +1,34 @@
 # Festival DevOps Music Fest
-[![Validación Landing Page](https://github.com/jheison04/festival-devops-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/jheison04/festival-devops-2026/actions/workflows/ci.yml)
 
-## Descripción
+![CI Status](https://github.com/jheison04/festival-devops-2026/actions/workflows/ci.yml/badge.svg)
 
-Proyecto desarrollado para la actividad de Git y GitHub del programa DevOps y Contenedores.
+## Integración Continua con GitHub Actions
 
-## Tecnologías
+Este proyecto utiliza GitHub Actions para validar automáticamente los archivos del proyecto.
 
-- HTML
-- CSS
-- Python
-- Flask
-- Docker
-- Docker Compose
-- Git
-- GitHub
+### ¿Qué valida?
 
-## Estructura
+- ✅ index.html
+- ✅ style.css  
+- ✅ README.md
 
-festival-devops/
+### Workflow Configurado
 
-├── frontend/
+Archivo: `.github/workflows/ci.yml`
 
-├── backend/
+El workflow se ejecuta cuando:
+- Se hace push a la rama main
+- Se crea un Pull Request
 
-├── docker-compose.yml
+### Estado Actual
 
-└── README.md
+El badge verde indica que todas las validaciones pasaron correctamente.
 
-## Ramas utilizadas
+### Commits Realizados
 
-- feature-landing
-- feature-backend
+- `84db60d` - ci: configurar workflow de validación
+- `57ca53e` - docs: agregar badge de estado
 
-## Docker
+---
 
-Se utiliza Docker para contenerizar la aplicación.
-
-## Docker Compose
-
-Se utiliza Docker Compose para administrar los servicios.
-
-## Git y GitHub
-
-Se utiliza Git para el control de versiones y GitHub como repositorio remoto.
+**Instructor:** Efrén Moreno Valoyes - emorenov@sena.edu.co
