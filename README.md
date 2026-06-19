@@ -1,4 +1,5 @@
 # Festival DevOps Music Fest
+[![Validación Landing Page](https://github.com/jheison04/festival-devops-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/jheison04/festival-devops-2026/actions/workflows/ci.yml)
 
 ## Descripción
 
