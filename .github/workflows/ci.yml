@@ -1,0 +1,32 @@
+name: Validación Landing Page
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar archivo index.html
+        run: test -f frontend/index.html
+
+      - name: Verificar archivo style.css
+        run: test -f frontend/style.css
+
+      - name: Verificar archivo script.js (si existe)
+        run: test -f frontend/script.js || echo "No se encontró script.js (opcional)"
+
+      - name: Verificar archivo README.md
+        run: test -f README.md
+
+      - name: Validación completada
+        run: echo "✅ Todas las validaciones pasaron exitosamente"
